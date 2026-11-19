@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="runbo.android.poc"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="26" />
+
+    <application
+        android:label="POC"
+        android:allowBackup="false">
+
+        <!-- 占位登录页：系统的开机恢复流程会显式启动这个组件，
+             缺少它会导致 com.android.settings 的 RestoreDataReceiver 抛异常中断，
+             进而使「第三方 APK 安装授权」开关无法在开机后自动恢复。 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+    </application>
+</manifest>

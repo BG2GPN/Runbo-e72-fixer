@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyInstaller
+build/
+dist/*.spec.bak
+
+# 本地运行残留
+port.txt
+*.log
+
+# IDE
+.idea/
+.vscode/
