@@ -23,11 +23,11 @@ adb shell setprop sys.appinstall.state 0
 adb reboot
 ```
 
-注意：要装回原厂 POC/POT 对讲应用前，先 `adb uninstall runbo.android.poc`，不然签名冲突装不上。
+注意：要装回原厂 POC 对讲应用前，先 `adb uninstall runbo.android.poc`，不然签名冲突装不上。
 
 ## 用法
 
-1. 对讲机开 USB 调试（设置 → 关于手机 → 连点版本号 7 次）
+1. 对讲机开 USB 调试（设置 → 关于手机 → 连点版本号5次）
 2. 插电脑，设备上点"允许 USB 调试"
 3. 跑 `dist/RadioFixTool.exe`，设备出来后点开始修复，完事自动重启
 
